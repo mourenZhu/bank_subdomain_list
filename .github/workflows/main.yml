@@ -4,10 +4,9 @@
 name: Update IP file
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -31,7 +30,7 @@ jobs:
       run: |
         python main.py
 
-    - name: Git flows
+    - name: Configure Git
       run: |
         git config --global user.name "zhumouren"
         git config --global user.email "zhumouren0623@qq.com"
@@ -59,4 +58,4 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.ACCESS_TOKENS }}
