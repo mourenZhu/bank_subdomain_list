@@ -1,6 +1,7 @@
 import requests
 import socket
 import os
+import time
 
 
 ip_dest_dir_name = "bank_ips"
@@ -17,10 +18,21 @@ def query_crt_sh(_domain):
 
 
 def get_sub_domain_list(_root_domain: str):
+    max_request_num = 10
     print("正在获取 {} 的子域名".format(_root_domain))
     _domain_set = set()
-    _sub_domain_list = query_crt_sh(_root_domain)
-    print(_sub_domain_list)
+    _sub_domain_list = []
+    # 如果获取子域名失败，重复获取10次
+    i = 0
+    for i in range(max_request_num):
+        _sub_domain_list = query_crt_sh(_root_domain)
+        if len(_sub_domain_list) > 0:
+            break
+        print("获取子域名失败，等待10s后重试")
+        time.sleep(10)
+    if i == max_request_num - 1 and len(_sub_domain_list) == 0:
+        print("10次都未成功获取子域名")
+
     for _sub_domain in _sub_domain_list:
         """
         下面这一行代码是因为crt.sh获取子域名时，一个list[i]中有多行子域名
@@ -43,6 +55,7 @@ def get_ip_list(_domain_list: [str]):
             ip = socket.gethostbyname(_domain)
             _ip_set.add(ip)
         except Exception as e:
+            print(e)
             pass
 
     print("ip数为: {}".format(len(_ip_set)))
@@ -80,7 +93,8 @@ if __name__ == "__main__":
     make_dest_dir()
     for root_domain in root_domain_list:
         sub_domain_list = get_sub_domain_list(root_domain)
-        write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
+        if len(sub_domain_list) > 0:
+            write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
 
         # ip_list = get_ip_list(sub_domain_list)
         # write_list_to_file(ip_dest_dir_name, root_domain, ip_list)
