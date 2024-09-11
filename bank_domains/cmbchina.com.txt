@@ -71,6 +71,7 @@ cm1.cmbchina.com
 cm2.cmbchina.com
 cm3.cmbchina.com
 cmacs.cmbchina.com
+cmain.paas.cmbchina.com
 cmap.cmbchina.com
 cmbchina.com
 cmbex16.cmbchina.com
@@ -191,6 +192,8 @@ hrhmo.cmbchina.com
 hrhmoapi.cmbchina.com
 hrrpt.pbirs.cmbchina.com
 html.m.cmbchina.com
+hwmmrctrl.cmbchina.com
+hwmmrctrlslave.cmbchina.com
 ibiz.cc.cmbchina.com
 idc.cmbchina.com
 images.cmbchina.com
@@ -345,6 +348,7 @@ sharpay.cmbchina.com
 shengyi.cmbchina.com
 show.university.cmbchina.com
 site.cmbchina.com
+smdy.cmbchina.com
 sme.cmbchina.com
 smmj.cmbchina.com
 so.cmbchina.com
@@ -425,6 +429,7 @@ www.sz2.cmbchina.com
 www3.cmbchina.com
 wxtest.cmbchina.com
 xft-beta.cmbchina.com
+xft-global.cmbchina.com
 xft-yundoc.cmbchina.com
 xft.cmbchina.com
 xftcdn.cmbchina.com
@@ -457,3 +462,4 @@ zhyhcrc.cmbchina.com
 zhyhcrwchc.cmbchina.com
 zhyhcrwghc.cmbchina.com
 zq.fuzhou.cmbchina.com
+zylcerp.cmbchina.com

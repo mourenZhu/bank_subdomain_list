@@ -20,6 +20,7 @@ def get_sub_domain_list(_root_domain: str):
     print("正在获取 {} 的子域名".format(_root_domain))
     _domain_set = set()
     _sub_domain_list = query_crt_sh(_root_domain)
+    print(_sub_domain_list)
     for _sub_domain in _sub_domain_list:
         """
         下面这一行代码是因为crt.sh获取子域名时，一个list[i]中有多行子域名
@@ -69,7 +70,7 @@ def make_dest_dir():
 
 def write_list_to_file(_dir_name: str, _domain: str, _list: [str]):
     _file_path = os.path.join(os.getcwd(), _dir_name, '{}.txt'.format(_domain))
-    with open(_file_path, 'w') as f:
+    with open(_file_path, 'w', newline='\n') as f:
         f.write('\n'.join(_list))
         f.flush()
 
@@ -81,7 +82,7 @@ if __name__ == "__main__":
         sub_domain_list = get_sub_domain_list(root_domain)
         write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
 
-        ip_list = get_ip_list(sub_domain_list)
-        write_list_to_file(ip_dest_dir_name, root_domain, ip_list)
+        # ip_list = get_ip_list(sub_domain_list)
+        # write_list_to_file(ip_dest_dir_name, root_domain, ip_list)
 
 

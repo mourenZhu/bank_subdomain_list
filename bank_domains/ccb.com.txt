@@ -505,7 +505,6 @@ nifs.ccb.com
 nisscs.lcfs.ccb.com
 obd.ja.ccb.com
 oby.ja.ccb.com
-oc.rris.ccb.com
 olb.ccb.com
 olb2.ccb.com
 olb3.ccb.com
@@ -642,6 +641,7 @@ tdlz.ccb.com
 tech.ccb.com
 test.acssys.ccb.com
 test.fxmp.scqy.ccb.com
+test.ipsp.creditcard.ccb.com
 test.qykh.scqy.ccb.com
 testsj.ccb.com
 testwy.ccb.com
@@ -780,5 +780,4 @@ zhyq.ccb.com
 zljc.jiayuan.lht1.ccb.com
 zljg.qiye.lht1.ccb.com
 zwyun.ccb.com
-zyyunbj05.ccb.com
 zyyunwh02.ccb.com

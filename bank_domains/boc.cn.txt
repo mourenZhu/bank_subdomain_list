@@ -53,6 +53,7 @@ cdn1.e.boc.cn
 cdn1.ebsnew.boc.cn
 cdn1.ebsnewppt.boc.cn
 cdn1.eppt.boc.cn
+cdn1.fuxing1.boc.cn
 cdn1.igtb.boc.cn
 cdn1.igtbpex.boc.cn
 cdn1.jf365.boc.cn
@@ -60,12 +61,19 @@ cdn1.mbs.boc.cn
 cdn1.mbspex.boc.cn
 cdn1.mbsppt.boc.cn
 cdn1.mbsppt2.boc.cn
+cdn1.mcard.boc.cn
+cdn1.mcardppt.boc.cn
 cdn1.openapi.boc.cn
 cdn1.openapippt.boc.cn
 cdn2.cmcoins.boc.cn
 cdn2.cmcoinspex.boc.cn
 cdn2.cmcoinsppt.boc.cn
+cdn2.igtb.boc.cn
+cdn2.igtbpex.boc.cn
 cdn2.mbs.boc.cn
+cdn3.mbs.boc.cn
+cdn3.mbspex.boc.cn
+cdn3.mbsppt.boc.cn
 ces.netc1am.igtb.boc.cn
 ces.netc1am.igtbpex.boc.cn
 ces.netc1ap.igtb.boc.cn
@@ -76,6 +84,9 @@ cesd.netc1.igtb.boc.cn
 cesd.netc1.igtbpex.boc.cn
 cesd.netc2.igtb.boc.cn
 cesd.netc2.igtbpex.boc.cn
+cfim.coresys.boc.cn
+cfim.coresyspex.boc.cn
+cfim.coresysppt.boc.cn
 cmcoins.boc.cn
 cmcoinspex.boc.cn
 cmcoinsppt.boc.cn
@@ -154,6 +165,7 @@ iisp-oidea.mbspex.boc.cn
 iisp-oidea.mbsppt.boc.cn
 iisp.mbs.boc.cn
 iisp.mbsppt.boc.cn
+immvs.igtb.boc.cn
 incfin.boc.cn
 incfinpex.boc.cn
 jf365.boc.cn
@@ -245,6 +257,7 @@ tjydt.ebs.boc.cn
 trnctr.igtb.boc.cn
 ubas.mbs.boc.cn
 university.silvere.boc.cn
+vapsc.open.boc.cn
 vidint.mbs.boc.cn
 vidint.mbspex.boc.cn
 vidint.mbsppt.boc.cn
