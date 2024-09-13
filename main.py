@@ -2,10 +2,13 @@ import requests
 import socket
 import os
 import time
+import sys, getopt
 
 
 ip_dest_dir_name = "bank_ips"
 domain_dest_dir_name = "bank_domains"
+all_bank_sub_domains_filename = "all_bank_sub_domains.txt"
+all_bank_ips_filename = "all_bank_ips.txt"
 
 
 def query_crt_sh(_domain):
@@ -52,10 +55,12 @@ def get_ip_list(_domain_list: [str]):
     _ip_set = set()
     for _domain in _domain_list:
         try:
-            ip = socket.gethostbyname(_domain)
-            _ip_set.add(ip)
+            addrs = socket.getaddrinfo(_domain, None)
+            for item in addrs:
+                if item[0] == socket.AddressFamily.AF_INET:
+                    _ip_set.add(item[4][0])
         except Exception as e:
-            print(e)
+            print("获取域名 {} IP时错误, {}".format(_domain, e))
             pass
 
     print("ip数为: {}".format(len(_ip_set)))
@@ -66,8 +71,13 @@ def get_ip_list(_domain_list: [str]):
 
 def get_bank_root_domains() -> [str]:
     domains_file_path = os.path.join(os.getcwd(), "bank_root_domains.txt")
-    with open(domains_file_path, 'r') as f:
+    with open(domains_file_path, 'r', encoding='utf-8') as f:
         root_domains = list(set(f.read().splitlines()))
+        for i in range(len(root_domains)):
+            domain = root_domains[i]
+            if "/" in domain:
+                domain = domain[:domain.find('/')]
+            root_domains[i] = domain.strip()
         root_domains.sort()
         return root_domains
 
@@ -88,15 +98,55 @@ def write_list_to_file(_dir_name: str, _domain: str, _list: [str]):
         f.flush()
 
 
+def write_dir_all_file_to_fir(_dir_path, _file_path):
+    with open(_file_path, 'a+', newline='\n') as all_content_file:
+        all_content_file.truncate(0)
+        for sub_file_name in os.listdir(_dir_path):
+            ban_sub_domains_file_path = os.path.join(_dir_path, sub_file_name)
+            with open(ban_sub_domains_file_path, 'r') as sub_file:
+                all_content_file.write(sub_file.read())
+
+
 if __name__ == "__main__":
+    argv = sys.argv[1:]
+    try:
+        opts, args = getopt.getopt(argv, "u")
+    except getopt.GetoptError:
+        sys.exit(2)
+
+    # 如果执行脚本时带-u 那么只会更新banl_root_domains.txt中有，但bank_domains目录下没有的域名
+    is_only_update_bank_root_domains = False
+    for opt, arg in opts:
+        if opt == '-u':
+            is_only_update_bank_root_domains = True
+    print(is_only_update_bank_root_domains)
+
     root_domain_list = get_bank_root_domains()
     make_dest_dir()
+
+    if is_only_update_bank_root_domains:
+        for bank_sub_domain_filename in os.listdir(os.path.join(os.getcwd(), domain_dest_dir_name)):
+            _domain = bank_sub_domain_filename[:bank_sub_domain_filename.find('.txt')]
+            if _domain in root_domain_list:
+                root_domain_list.remove(_domain)
+        print("开启了只更新没有记录的子域名,更新的子域名为: {}".format(root_domain_list))
     for root_domain in root_domain_list:
         sub_domain_list = get_sub_domain_list(root_domain)
         if len(sub_domain_list) > 0:
             write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
 
-        # ip_list = get_ip_list(sub_domain_list)
-        # write_list_to_file(ip_dest_dir_name, root_domain, ip_list)
+    for bank_sub_domain_filename in os.listdir(os.path.join(os.getcwd(), domain_dest_dir_name)):
+        with open(os.path.join(os.getcwd(), domain_dest_dir_name, bank_sub_domain_filename), 'r', encoding='utf-8') as f:
+            domains = f.readlines()
+            domain_list = [x.strip() for x in domains]
+            print("准备获取{}的IP".format(bank_sub_domain_filename))
+            ip_list = get_ip_list(domain_list)
+            write_list_to_file(ip_dest_dir_name, bank_sub_domain_filename[:bank_sub_domain_filename.find(".txt")], ip_list)
 
+    # 把所有银行的域名都写入一个文件
+    write_dir_all_file_to_fir(os.path.join(os.getcwd(), domain_dest_dir_name),
+                              os.path.join(os.getcwd(), all_bank_sub_domains_filename))
 
+    # 把所有银行的IP都写入一个文件
+    write_dir_all_file_to_fir(os.path.join(os.getcwd(), ip_dest_dir_name),
+                              os.path.join(os.getcwd(), all_bank_ips_filename))
