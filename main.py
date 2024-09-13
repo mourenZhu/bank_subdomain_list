@@ -161,7 +161,10 @@ if __name__ == "__main__":
     #         ip_list = get_ip_list(domain_list)
     #         write_list_to_file(ip_dest_dir_name, bank_sub_domain_filename[:bank_sub_domain_filename.find(".txt")], ip_list)
 
+    now_get_root_domain_nums = 0
     for root_domain in root_domain_list:
+        now_get_root_domain_nums += 1
+        print("开始获取 {} 所有子域名和IP，现在是第 {} 个根域名".format(root_domain, now_get_root_domain_nums))
         sub_domain_list, ip_list = get_subdomain_and_ip_list(root_domain)
         if len(sub_domain_list) > 0 and len(ip_list) > 0:
             write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
