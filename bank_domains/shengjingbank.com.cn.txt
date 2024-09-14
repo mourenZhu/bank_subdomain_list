@@ -1,0 +1,8 @@
+corpor.shengjingbank.com.cn
+creditcard.shengjingbank.com.cn
+creditcardapply1.shengjingbank.com.cn
+creditcardapply2.shengjingbank.com.cn
+ir.shengjingbank.com.cn
+person.shengjingbank.com.cn
+shengjingbank.com.cn
+trip.shengjingbank.com.cn

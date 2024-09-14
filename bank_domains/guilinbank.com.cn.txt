@@ -1,0 +1,13 @@
+cc.guilinbank.com.cn
+compmg.guilinbank.com.cn
+credit.guilinbank.com.cn
+creditcardfb1.guilinbank.com.cn
+creditcardfb2.guilinbank.com.cn
+ebank.guilinbank.com.cn
+guilinbank.com.cn
+person.guilinbank.com.cn
+weidongli.guilinbank.com.cn
+www.compmg.guilinbank.com.cn
+www.ebank.guilinbank.com.cn
+www.person.guilinbank.com.cn
+yxpt.guilinbank.com.cn

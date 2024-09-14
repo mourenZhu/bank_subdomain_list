@@ -1,0 +1,15 @@
+api.bill.msbank.com
+bill.msbank.com
+corporbank.msbank.com
+creditcard.msbank.com
+mb.msbank.com
+msbank.com
+mtp.msbank.com
+onlinebanking.msbank.com
+pcbank.msbank.com
+perbank.msbank.com
+szyh.msbank.com
+tuofu.msbank.com
+weixin.msbank.com
+www.msbank.com
+yingshangbao.msbank.com
