@@ -1,0 +1,4 @@
+shop.qrcb.com.cn
+test251.qrcb.com.cn
+xyk.qrcb.com.cn
+xykbill.qrcb.com.cn

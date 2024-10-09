@@ -11,6 +11,8 @@ cdn5.tzbank.com
 cdndown.tzbank.com
 cdnmpc.tzbank.com
 cdnmsm.tzbank.com
+cdnnmsm.tzbank.com
+cdnyd.tzbank.com
 cg.tzbank.com
 drsl.tzbank.com
 easypay.tzbank.com
@@ -38,6 +40,7 @@ mobile6.tzbank.com
 msm.tzbank.com
 mw.tzbank.com
 nmdm.tzbank.com
+nmsm.tzbank.com
 nxg.tzbank.com
 oa.tzbank.com
 open.tzbank.com

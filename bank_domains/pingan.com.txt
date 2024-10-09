@@ -155,6 +155,7 @@ hcz-vass-img.pingan.com.cn
 hcz.pingan.com
 hczlife-arouse.pingan.com.cn
 hczlife-static.pingan.com.cn
+hdfund.pingan.com
 health-service.pingan.com
 health.pingan.com
 health.pingan.com.cn
@@ -309,6 +310,7 @@ test1-emcs.pingan.com
 test2-emcs.pingan.com
 tis.security.pingan.com
 tqlh.futures.pingan.com
+trust.pingan.com
 video.pingan.com
 voyager.pingan.com
 waf.pingan.com

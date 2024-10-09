@@ -1,0 +1,17 @@
+cardapply.hkbchina.com
+ccmall.hkbchina.com
+creditcard.hkbchina.com
+ebank.hkbchina.com
+fund.hkbchina.com
+mail.hkbchina.com
+newbms.hkbchina.com
+openapi.hkbchina.com
+pay.hkbchina.com
+slpt.hkbchina.com
+static.hkbchina.com
+taxloan.hkbchina.com
+vendor.hkbchina.com
+weixin.hkbchina.com
+whgjj.hkbchina.com
+www.hkbchina.com
+ydapp.hkbchina.com

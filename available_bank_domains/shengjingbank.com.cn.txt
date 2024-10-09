@@ -1,0 +1,4 @@
+creditcard.shengjingbank.com.cn
+creditcardapply2.shengjingbank.com.cn
+ir.shengjingbank.com.cn
+trip.shengjingbank.com.cn

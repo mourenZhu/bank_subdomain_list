@@ -1,0 +1,17 @@
+boncfc.njcb.com.cn
+ccclub.njcb.com.cn
+cdnvideo.njcb.com.cn
+ebank.njcb.com.cn
+ebill.njcb.com.cn
+ebillapi.njcb.com.cn
+gift.njcb.com.cn
+mail.njcb.com.cn
+static-etong.njcb.com.cn
+static-openapi.njcb.com.cn
+static-retail.njcb.com.cn
+static.njcb.com.cn
+xyloanapi.njcb.com.cn
+xyloanapi1.njcb.com.cn
+xyloanh5.njcb.com.cn
+xyloantext.njcb.com.cn
+xyloantext1.njcb.com.cn

@@ -1,0 +1,15 @@
+api.mybill.bankofrizhao.com.cn
+api.youcard.bankofrizhao.com.cn
+bl.bankofrizhao.com.cn
+cbmp.bankofrizhao.com.cn
+corporbank.bankofrizhao.com.cn
+ebank.bankofrizhao.com.cn
+jf.bankofrizhao.com.cn
+jncorporbank.bankofrizhao.com.cn
+jnebank.bankofrizhao.com.cn
+mybill.bankofrizhao.com.cn
+right.bankofrizhao.com.cn
+video.bankofrizhao.com.cn
+www.bankofrizhao.com.cn
+wx.bankofrizhao.com.cn
+youcard.bankofrizhao.com.cn

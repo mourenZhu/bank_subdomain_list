@@ -10,6 +10,7 @@ gw.open.hebbank.com
 hebbank.com
 hsqcs.hebbank.com
 hsqpre.hebbank.com
+hxycs.hebbank.com
 m.hebbank.com
 mall.hebbank.com
 mdm.hebbank.com

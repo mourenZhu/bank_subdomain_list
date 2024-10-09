@@ -1,3 +1,5 @@
+aimp-ai-kaifa.test.bjrcb.com
+aimp-tupu-kaifa.test.bjrcb.com
 api.cloudbill.bjrcb.com
 asgw-bw.bjrcb.com
 asgw.bjrcb.com
@@ -32,9 +34,11 @@ ccmsxcuatint.test.bjrcb.com
 ccmsxcylint.test.bjrcb.com
 ccmsylint.test.bjrcb.com
 cdps-gy.test.bjrcb.com
+cdps-sit.test.bjrcb.com
 cdps-uat.test.bjrcb.com
 cdps-yl.test.bjrcb.com
 cloudbill.bjrcb.com
+cms-gy.test.bjrcb.com
 cms-kf.test.bjrcb.com
 cms-s.test.bjrcb.com
 cms-sit.test.bjrcb.com
@@ -50,6 +54,7 @@ creditcard.bjrcb.com
 download.trms2cw.bjrcb.com
 downloads.bjrcb.com
 ebank.bjrcb.com
+ebank.test.bjrcb.com
 ebcs.bjrcb.com
 ebcs.test.bjrcb.com
 ecif-sit.test.bjrcb.com
@@ -81,6 +86,7 @@ epms-sit.test.bjrcb.com
 esss.bjrcb.com
 etpm.test.bjrcb.com
 face.bjrcb.com
+fecs-u.test.bjrcb.com
 fhzx.bjrcb.com
 fhzx.test-nc-u.test.bjrcb.com
 fhzx.test-nc.test.bjrcb.com

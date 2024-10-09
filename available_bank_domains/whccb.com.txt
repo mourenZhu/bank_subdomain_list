@@ -1,0 +1,16 @@
+corporbank.whccb.com
+crcard.whccb.com
+ebank.whccb.com
+jf.whccb.com
+mail.whccb.com
+malls.whccb.com
+modisk.whccb.com
+mportal.whccb.com
+openbank.whccb.com
+phpt.whccb.com
+phszpt.whccb.com
+scb.whccb.com
+scbapi.whccb.com
+scfp.whccb.com
+video.whccb.com
+www.whccb.com

@@ -1,0 +1,9 @@
+ebank.bgzchina.com
+ihstest.bgzchina.com
+pos.bgzchina.com
+postest.bgzchina.com
+safetysystest.bgzchina.com
+spp.bgzchina.com
+spp1.bgzchina.com
+uastestmer.bgzchina.com
+uastesttrade.bgzchina.com

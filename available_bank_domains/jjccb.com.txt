@@ -1,0 +1,13 @@
+cdn.jjccb.com
+ebank.jjccb.com
+jjccb.com
+m.jjccb.com
+mail.jjccb.com
+mbank.jjccb.com
+mpaas.jjccb.com
+mtmq.jjccb.com
+oa.jjccb.com
+pay.jjccb.com
+www.jjccb.com
+wxbank.jjccb.com
+zxyh.jjccb.com

@@ -168,6 +168,7 @@ personalbank.cib.com.cn
 personalwallet.cib.com.cn
 pfcp.cib.com.cn
 piao.cib.com.cn
+prepb.cib.com.cn
 prma.cib.com.cn
 program.xyzhnp.cib.com.cn
 ps1.cib.com.cn

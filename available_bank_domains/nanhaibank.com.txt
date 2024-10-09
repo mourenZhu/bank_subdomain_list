@@ -1,0 +1,10 @@
+ebank.nanhaibank.com
+ebanks.nanhaibank.com
+mbank.nanhaibank.com
+miniprogram.nanhaibank.com
+mobilecredituat.nanhaibank.com
+rtcsp.nanhaibank.com
+rtcsp2.nanhaibank.com
+rtcuat.nanhaibank.com
+wbank.nanhaibank.com
+wxprivate.nanhaibank.com

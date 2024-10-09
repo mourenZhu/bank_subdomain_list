@@ -1,0 +1,9 @@
+creditcard.hfbank.com.cn
+creditcardapply.hfbank.com.cn
+dtm-download.hfbank.com.cn
+hfbank.com.cn
+hfhuiyi.hfbank.com.cn
+hfhuiyisc.hfbank.com.cn
+scvpn.hfbank.com.cn
+testvpn.hfbank.com.cn
+vpn.hfbank.com.cn

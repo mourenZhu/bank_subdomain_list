@@ -1,0 +1,6 @@
+cardmall.bankofdl.com
+ccap.bankofdl.com
+ebank.bankofdl.com
+fund.bankofdl.com
+ibank.bankofdl.com
+office.bankofdl.com

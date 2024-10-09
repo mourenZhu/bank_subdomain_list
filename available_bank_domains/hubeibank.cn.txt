@@ -1,0 +1,10 @@
+anychat.hubeibank.cn
+bank.hubeibank.cn
+ebank.hubeibank.cn
+jscs.hubeibank.cn
+oa.hubeibank.cn
+skybank.hubeibank.cn
+zx.hubeibank.cn
+zxmo.hubeibank.cn
+zxwx.hubeibank.cn
+zxwxcs.hubeibank.cn

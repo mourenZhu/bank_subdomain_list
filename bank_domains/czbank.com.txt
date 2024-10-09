@@ -6,6 +6,9 @@ cemplatform-verify.czbank.com
 cemstatic-test.czbank.com
 cemstatic-verify.czbank.com
 cemstatic.czbank.com
+charity-digital-mobile-test.czbank.com
+charity-digital-mobile-verify.czbank.com
+charity-digital-verify.czbank.com
 commjyb-test.czbank.com
 corbank.czbank.com
 csms-test.czbank.com
@@ -30,6 +33,8 @@ etczs-verify.czbank.com
 fxhedge-test.czbank.com
 fxhedge-verify.czbank.com
 fxtrader-verify.czbank.com
+gljy-test.czbank.com
+gljy-verify.czbank.com
 jcpt-test.czbank.com
 jcpt-verify.czbank.com
 jjbx-test.czbank.com

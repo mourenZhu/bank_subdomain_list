@@ -369,7 +369,6 @@ mail-in1.nz.ccb.com
 mail-in1.ru.ccb.com
 mail-in1.tw.ccb.com
 mail-in1.vn.ccb.com
-mail-in1.wealthccb.com
 mail-in2.ae.ccb.com
 mail-in2.ca.ccb.com
 mail-in2.ccb.com
@@ -383,7 +382,6 @@ mail-in2.nz.ccb.com
 mail-in2.ru.ccb.com
 mail-in2.tw.ccb.com
 mail-in2.vn.ccb.com
-mail-in2.wealthccb.com
 mail-in3.ae.ccb.com
 mail-in3.ca.ccb.com
 mail-in3.ccb.com
@@ -397,7 +395,6 @@ mail-in3.nz.ccb.com
 mail-in3.ru.ccb.com
 mail-in3.tw.ccb.com
 mail-in3.vn.ccb.com
-mail-in3.wealthccb.com
 mail-in4.ae.ccb.com
 mail-in4.ca.ccb.com
 mail-in4.ccb.com
@@ -411,7 +408,6 @@ mail-in4.nz.ccb.com
 mail-in4.ru.ccb.com
 mail-in4.tw.ccb.com
 mail-in4.vn.ccb.com
-mail-in4.wealthccb.com
 mail.asia.ccb.com
 mail.idn.ccb.com
 mail.la.ccb.com

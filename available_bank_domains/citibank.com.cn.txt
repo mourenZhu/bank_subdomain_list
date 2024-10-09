@@ -1,0 +1,8 @@
+citibank.com.cn
+cnmobile.globalcommon.uat.citibank.com.cn
+content22.citibank.com.cn
+globalcommonbuild.uat.citibank.com.cn
+mobile.citibank.com.cn
+sit2.cnmobile.globalcommonbuild.citibank.com.cn
+webservice.citibank.com.cn
+www.citibank.com.cn

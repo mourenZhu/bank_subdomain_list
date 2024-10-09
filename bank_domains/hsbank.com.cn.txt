@@ -6,6 +6,7 @@ importcardapply.hsbank.com.cn
 inv.hsbank.com.cn
 mail.hsbank.com.cn
 malls.hsbank.com.cn
+rczp.hsbank.com.cn
 rightretail.hsbank.com.cn
 test.hsbank.com.cn
 testbh.hsbank.com.cn

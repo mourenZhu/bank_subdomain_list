@@ -193,6 +193,7 @@ origin-ecommerce-merchant.business.hsbc.com.cn
 origin-ifc.services.cn-banking.hsbc.com.cn
 origin-smefinancing-sit.business.hsbc.com.cn
 origin-smefinancing-uat.business.hsbc.com.cn
+origin-smefinancing.business.hsbc.com.cn
 origin-uat-cmb-wechat.services.hsbc.com.cn
 origin-wechat-mp-uat.services.hsbc.com.cn
 origin-wpb.hsbc.com.cn

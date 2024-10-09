@@ -3,12 +3,13 @@ import socket
 import os
 import time
 import sys, getopt
-# from knock import KNOCKPY
 
 
 ip_dest_dir_name = "bank_ips"
 domain_dest_dir_name = "bank_domains"
+available_domain_dest_dir_name = "available_bank_domains"
 all_bank_sub_domains_filename = "all_bank_sub_domains.txt"
+available_all_bank_sub_domains_filename = "available_all_bank_sub_domains.txt"
 all_bank_ips_filename = "all_bank_ips.txt"
 
 
@@ -52,6 +53,19 @@ def get_sub_domain_list(_root_domain: str):
     return _domain_list
 
 
+def get_available_domain_list(_root_domain: [str]):
+    available_domain_list = []
+    for _domain in _root_domain:
+        try:
+            addrs = socket.getaddrinfo(_domain, None)
+            if len(addrs) > 0:
+                available_domain_list.append(_domain)
+        except Exception as e:
+            print("获取域名 {} IP时错误, {}".format(_domain, e))
+            pass
+    return available_domain_list
+
+
 def get_ip_list(_domain_list: [str]):
     _ip_set = set()
     for _domain in _domain_list:
@@ -68,25 +82,6 @@ def get_ip_list(_domain_list: [str]):
     _ip_list = list(_ip_set)
     _ip_list.sort()
     return _ip_list
-
-
-# def get_subdomain_and_ip_list(_domain: str):
-#     reconn_num = 3
-#     _sub_domain_list = []
-#     _ip_list = []
-#     while reconn_num > 0:
-#         try:
-#             results = KNOCKPY(_domain, dns=None, useragent=None, timeout=None, threads=None, recon=True, bruteforce=True,
-#                               wordlist=None)
-#             for item in results:
-#                 _sub_domain_list.append(item['domain'])
-#                 _ip_list += item['ip']
-#             return _sub_domain_list, _ip_list
-#         except Exception as e:
-#             reconn_num -= 1
-#             print("获取域名{}时, 出现意外{}, 再重试{}次".format(_domain, e, reconn_num))
-#     return _sub_domain_list, _ip_list
-
 
 def get_bank_root_domains() -> [str]:
     domains_file_path = os.path.join(os.getcwd(), "bank_root_domains.txt")
@@ -108,6 +103,9 @@ def make_dest_dir():
     dir_path = os.path.join(os.getcwd(), domain_dest_dir_name)
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
+    dir_path = os.path.join(os.getcwd(), available_domain_dest_dir_name)
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
 
 
 def write_list_to_file(_dir_name: str, _domain: str, _list: [str]):
@@ -124,6 +122,22 @@ def write_dir_all_file_to_fir(_dir_path, _file_path):
             ban_sub_domains_file_path = os.path.join(_dir_path, sub_file_name)
             with open(ban_sub_domains_file_path, 'r') as sub_file:
                 all_content_file.write(sub_file.read())
+
+
+def update_bank_sub_domains(_root_domain_list: [str]):
+    for root_domain in _root_domain_list:
+        sub_domain_list = get_sub_domain_list(root_domain)
+        if len(sub_domain_list) > 0:
+            write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
+
+
+def update_available_bank_sub_domains():
+    for bank_sub_domain_filename in os.listdir(os.path.join(os.getcwd(), domain_dest_dir_name)):
+        with open(os.path.join(os.getcwd(), domain_dest_dir_name, bank_sub_domain_filename), 'r', encoding='utf-8') as f:
+            domains = f.readlines()
+            domain_list = [x.strip() for x in domains]
+            available_domain_list = get_available_domain_list(domain_list)
+            write_list_to_file(available_domain_dest_dir_name, bank_sub_domain_filename[:bank_sub_domain_filename.find(".txt")], available_domain_list)
 
 
 if __name__ == "__main__":
@@ -148,32 +162,11 @@ if __name__ == "__main__":
             if _domain in root_domain_list:
                 root_domain_list.remove(_domain)
         print("开启了只更新没有记录的子域名,更新的子域名为: {}".format(root_domain_list))
-    for root_domain in root_domain_list:
-        sub_domain_list = get_sub_domain_list(root_domain)
-        if len(sub_domain_list) > 0:
-            write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
-    #
-    # for bank_sub_domain_filename in os.listdir(os.path.join(os.getcwd(), domain_dest_dir_name)):
-    #     with open(os.path.join(os.getcwd(), domain_dest_dir_name, bank_sub_domain_filename), 'r', encoding='utf-8') as f:
-    #         domains = f.readlines()
-    #         domain_list = [x.strip() for x in domains]
-    #         print("准备获取{}的IP".format(bank_sub_domain_filename))
-    #         ip_list = get_ip_list(domain_list)
-    #         write_list_to_file(ip_dest_dir_name, bank_sub_domain_filename[:bank_sub_domain_filename.find(".txt")], ip_list)
 
-    # now_get_root_domain_nums = 0
-    # for root_domain in root_domain_list:
-    #     now_get_root_domain_nums += 1
-    #     print("开始获取 {} 所有子域名和IP，现在是第 {} 个根域名".format(root_domain, now_get_root_domain_nums))
-    #     sub_domain_list, ip_list = get_subdomain_and_ip_list(root_domain)
-    #     if len(sub_domain_list) > 0 and len(ip_list) > 0:
-    #         write_list_to_file(domain_dest_dir_name, root_domain, sub_domain_list)
-    #         write_list_to_file(ip_dest_dir_name, root_domain, ip_list)
+    update_bank_sub_domains(root_domain_list)
+    update_available_bank_sub_domains()
 
-    # 把所有银行的域名都写入一个文件
-    write_dir_all_file_to_fir(os.path.join(os.getcwd(), domain_dest_dir_name),
-                              os.path.join(os.getcwd(), all_bank_sub_domains_filename))
+    # 把可用的域名写进一个文件
+    write_dir_all_file_to_fir(os.path.join(os.getcwd(), available_domain_dest_dir_name),
+                              os.path.join(os.getcwd(), available_all_bank_sub_domains_filename))
 
-    # 把所有银行的IP都写入一个文件
-    # write_dir_all_file_to_fir(os.path.join(os.getcwd(), ip_dest_dir_name),
-    #                           os.path.join(os.getcwd(), all_bank_ips_filename))

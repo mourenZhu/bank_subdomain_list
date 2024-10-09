@@ -1,0 +1,16 @@
+creditcardapply.hsbank.com.cn
+hxsh.hsbank.com.cn
+importcardapply.hsbank.com.cn
+inv.hsbank.com.cn
+mail.hsbank.com.cn
+malls.hsbank.com.cn
+rczp.hsbank.com.cn
+rightretail.hsbank.com.cn
+test.hsbank.com.cn
+testbh.hsbank.com.cn
+travel.hsbank.com.cn
+wcall.hsbank.com.cn
+www.hsbank.com.cn
+xwei.hsbank.com.cn
+zx.hsbank.com.cn
+zxb.hsbank.com.cn

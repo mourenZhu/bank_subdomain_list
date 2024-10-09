@@ -43,6 +43,7 @@ pushmail.hkbea.com.cn
 rbi.hkbea.com.cn
 rdrs.hkbea.com.cn
 scf.hkbea.com.cn
+scf.uat.hkbea.com.cn
 scftest.hkbea.com.cn
 sdpmobile.hkbea.com.cn
 sentry2.dingtalk.hkbea.com.cn

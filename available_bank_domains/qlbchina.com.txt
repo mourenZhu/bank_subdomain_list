@@ -1,0 +1,10 @@
+corporbank.qlbchina.com
+ebank.qlbchina.com
+fba.qlbchina.com
+fbc.qlbchina.com
+iba.qlbchina.com
+ibb.qlbchina.com
+ibill.qlbchina.com
+mall.qlbchina.com
+qiluqianbao.qlbchina.com
+test01.qlbchina.com

@@ -12,6 +12,7 @@ cdn.tmf.grcbank.com
 cdn.tmf.tcetest.grcbank.com
 cdn.weda-console.tcetest.grcbank.com
 cdn.xyk.grcbank.com
+cdn.yxapp.grcbank.com
 cloudbill.grcbank.com
 cmb.grcbank.com
 cmisnew.grcbank.com
@@ -43,6 +44,7 @@ oa.grcbank.com
 open.grcbank.com
 pay.grcbank.com
 rez.grcbank.com
+sec.grcbank.com
 smcp-weda-fina.grcbank.com
 smcp-weda-pre.grcbank.com
 smcp-weda-sci.grcbank.com

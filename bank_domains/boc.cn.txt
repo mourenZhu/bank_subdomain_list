@@ -70,7 +70,11 @@ cdn2.cmcoinspex.boc.cn
 cdn2.cmcoinsppt.boc.cn
 cdn2.igtb.boc.cn
 cdn2.igtbpex.boc.cn
+cdn2.jf365.boc.cn
+cdn2.jf365ppt.boc.cn
 cdn2.mbs.boc.cn
+cdn3.jf365.boc.cn
+cdn3.jf365ppt.boc.cn
 cdn3.mbs.boc.cn
 cdn3.mbspex.boc.cn
 cdn3.mbsppt.boc.cn
@@ -93,6 +97,8 @@ cmcoinsppt.boc.cn
 co.ebs.boc.cn
 co.ebsnew.boc.cn
 creditc2.3debspay.boc.cn
+crimng.jf365.boc.cn
+crimng.jf365ppt.boc.cn
 crm.bocwm.cocloud.boc.cn
 ctour.scene.boc.cn
 debitc2.3debspay.boc.cn
@@ -191,6 +197,10 @@ mobile.jf365.boc.cn
 mobile.jf365pex.boc.cn
 mobile.jf365ppt.boc.cn
 mrgfx-ln.boc.cn
+msmcam.jf365.boc.cn
+msmcam.jf365ppt.boc.cn
+msmpsd.jf365.boc.cn
+msmpsd.jf365ppt.boc.cn
 nbccss.mcard.boc.cn
 nbccss.mcardpex.boc.cn
 netc1.igtb.boc.cn

@@ -1,4 +1,5 @@
 cdn.xib.com.cn
+chatengine-prox.test.xib.com.cn
 dbe.xib.com.cn
 dl.xib.com.cn
 download.xib.com.cn
@@ -18,6 +19,8 @@ mpaascdn.xib.com.cn
 msp.xib.com.cn
 pay.xib.com.cn
 per.xib.com.cn
+prox.test.xib.com.cn
+seller-prox.test.xib.com.cn
 sslvpn.xib.com.cn
 static.xib.com.cn
 static1.xib.com.cn

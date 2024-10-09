@@ -1,0 +1,6 @@
+cc.guilinbank.com.cn
+creditcardfb1.guilinbank.com.cn
+creditcardfb2.guilinbank.com.cn
+ebank.guilinbank.com.cn
+weidongli.guilinbank.com.cn
+yxpt.guilinbank.com.cn

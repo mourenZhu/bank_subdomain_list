@@ -1,0 +1,16 @@
+apply.gzcb.com.cn
+build.gzcb.com.cn
+corbankpro.gzcb.com.cn
+creditcard.gzcb.com.cn
+ebank.gzcb.com.cn
+epos.gzcb.com.cn
+i.creditcard.gzcb.com.cn
+lpos.gzcb.com.cn
+mall.creditcard.gzcb.com.cn
+mini.cc.gzcb.com.cn
+oa.gzcb.com.cn
+onlinepay.creditcard.gzcb.com.cn
+trip.creditcard.gzcb.com.cn
+unionbind.creditcard.gzcb.com.cn
+weixin.sit.gzcb.com.cn
+weixin.tc.gzcb.com.cn

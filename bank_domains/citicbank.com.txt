@@ -85,6 +85,7 @@ dev.nmas.cdn.test.citicbank.com
 dev.nmas.test.citicbank.com
 dev.npcspf.citicbank.com
 dev.nppt.test.citicbank.com
+dev.npptug.test.citicbank.com
 dev.pbms.test.citicbank.com
 dev.sso.citicbank.com
 dev.tums.test.citicbank.com
